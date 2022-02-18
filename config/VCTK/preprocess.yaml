@@ -1,0 +1,41 @@
+dataset: "VCTK"
+
+path:
+  corpus_path: "/home/keon/speech-datasets/en/VCTK-Corpus-0.92/"
+  wav_tag: "mic1"
+  wav_dir: "wav48_silence_trimmed"
+  txt_dir: "txt"
+  lexicon_path: "lexicon/librispeech-lexicon.txt"
+  raw_path: "./raw_data/VCTK"
+  preprocessed_path: "./preprocessed_data/VCTK"
+
+preprocessing:
+  speaker_embedder: "DeepSpeaker" # support 'none', 'DeepSpeaker'
+  speaker_embedder_cuda: False # since it's too large to load in a single GPU
+  val_size: 512
+  text:
+    text_cleaners: ["english_cleaners"]
+    language: "en"
+  audio:
+    sampling_rate: 22050
+    max_wav_value: 32768.0
+  stft:
+    filter_length: 1024
+    hop_length: 256
+    win_length: 1024
+  mel:
+    n_mel_channels: 80
+    mel_fmin: 0
+    mel_fmax: 8000 # please set to 8000 for HiFi-GAN vocoder, set to null for MelGAN vocoder
+  pitch:
+    pitch_type: "cwt" # support 'frame', 'ph', 'cwt'
+    pitch_norm: "log" # support 'standard', 'log'
+    pitch_norm_eps: 0.000000001
+    pitch_ar: False
+    with_f0: True
+    with_f0cwt: True
+    use_uv: True
+    cwt_scales: -1
+  energy:
+    feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
+    normalization: True
