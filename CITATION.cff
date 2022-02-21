@@ -5,7 +5,7 @@ authors:
   given-names: "Keon"
   orcid: "https://orcid.org/0000-0001-9028-1018"
 title: "DiffGAN-TTS"
-version: 0.1.0
-doi: ___
+version: 0.1.1
+doi: 10.5281/zenodo.6203248
 date-released: 2022-02-21
 url: "https://github.com/keonlee9420/DiffGAN-TTS"
