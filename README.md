@@ -166,6 +166,7 @@ Please cite this repository by the "[Cite this repository](https://github.blog/2
 - [keonlee9420's DiffSinger](https://github.com/keonlee9420/DiffSinger)
 - [keonlee9420's Comprehensive-Transformer-TTS](https://github.com/keonlee9420/Comprehensive-Transformer-TTS)
 - [LynnHo' DCGAN-LSGAN-WGAN-GP-DRAGAN-Pytorch](https://github.com/LynnHo/DCGAN-LSGAN-WGAN-GP-DRAGAN-Pytorch)
+- [seungwonpark' melgan](https://github.com/seungwonpark/melgan)
 - [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
 - [Tackling the Generative Learning Trilemma with Denoising Diffusion GANs](https://arxiv.org/abs/2112.07804)
 - [DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism](https://arxiv.org/abs/2105.02446)
